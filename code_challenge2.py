@@ -1,4 +1,4 @@
-money = int(input('Enter amount to deposit'))
+money = int(input('Enter amount to deposit ---->'))
 
 print('================== PH PESO DENOMINATION BREAK DOWN ==================')
 
