@@ -1,4 +1,6 @@
-money = 4488
+money = int(input('Enter amount to deposit'))
+
+print('================== PH PESO DENOMINATION BREAK DOWN ==================')
 
 print("money to spend", money)
 
