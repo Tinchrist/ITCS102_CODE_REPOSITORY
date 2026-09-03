@@ -1,3 +1,6 @@
-name = input('What is your name ? --> ')
+x = eval(input("Enter a number ---> "))
 
-print("Hi, ", name, ", how are you doing today?")
+total = x + 8
+
+#print("Good morning", total)
+print(type(x))
