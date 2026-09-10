@@ -1,0 +1,6 @@
+sender = input("Enter the sender name ----> ")
+type = input("Enter the type of item ----> ")
+is_fragile = bool(input("Is the item fragile")
+weight = float(input("Enter the weight of the item ---->")
+distance = float(input("distance"))
+is_Express = bool(input("Is it EXPRESS"))
