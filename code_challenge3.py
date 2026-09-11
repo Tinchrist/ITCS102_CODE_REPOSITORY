@@ -1,20 +1,20 @@
 
-#QUESTIONS
+#DISPLAY
 print("______________________________________________________________________________________________")
 
 SenderName = input('Enter the name of the sender --> ')
 
 print("______________________________________________________________________________________________")
 
-TypeOfItem = input('What is the type of item did you order ? --> ')
+Itemtype = input('What is the type of item did you purchase ? --> ')
 
 print("______________________________________________________________________________________________")
 
-is_Fragile = bool(input('Is it fragile? (yes/no) --> ') == 'yes')
+is_Fragile = bool(input('Is the item fragile? (yes or no) --> ') == 'yes')
 
 print("______________________________________________________________________________________________")
 
-Weight = float(input('How heavy the item is in kg? --> '))
+Weight = float(input('How heavy is the item in kg? --> '))
 
 print("______________________________________________________________________________________________")
 
@@ -22,11 +22,11 @@ Distance = float(input('How far is the item from the designated destination in k
 
 print("______________________________________________________________________________________________")
 
-is_Express = bool(input('Is it in a hurry? (yes/no) --> ') == 'yes')
+is_Express = bool(input('Does it need to be shipped immediately? (yes or no) --> ') == 'yes')
 
 print("______________________________________________________________________________________________")
 
-is_International = bool(input('Is the item from another country? (yes/no) --> ') == 'yes')
+is_International = bool(input('Does this item come from overseas? (yes or no) --> ') == 'yes')
 
 print("______________________________________________________________________________________________")
 
@@ -50,22 +50,22 @@ elif Distance > 1000 or Weight > 30:
 else:
     Total = base_cost
 
-shippingfee = Total - base_cost
+Shipping_Fee = Total - base_cost
 
 
 
-print()
+#RESULTS
 print('``````````````````````````````````````````````````````````````````````````````````````````````')
-print("~CCM DELIVERY EXPRESS~")
+print("~DELIVERY INFO~")
 print('Sender:', SenderName)
-print('Order:', TypeOfItem)
+print('Purchase:', Itemtype)
 print('Fragile:', is_Fragile)
-print('Weight:', Weight, 'kg')
-print('Distance:', Distance, 'km')
+print('Weight:', Weight, 'kilograms')
+print('Distance:', Distance, 'kilometers')
 print('Express:', is_Express)
 print('International:', is_International)
-print('Base Cost: PHP', base_cost)
-print('Shipping Fee: PHP', shippingfee)
-print('Total: PHP', Total)
+print('Base Cost: ₱', base_cost)
+print('Shipping Fee: ₱', Shipping_Fee)
+print('Total: ₱', Total)
 print('``````````````````````````````````````````````````````````````````````````````````````````````')
 
