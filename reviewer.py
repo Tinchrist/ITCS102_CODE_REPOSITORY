@@ -33,11 +33,10 @@ if age >= 21 and years_in_business >= 2.0 and has_defaults == False:
             print("Rejected: INsufficient collateral value for",collateral_name)
 
         #supercharge
-        surge_fee_rate = max_loan * base_fee
-        if max_loan % 50000 !=
-            print("Additional CHarge added")
-            base fee += 250
-            print("Updated base fee is",base_fee)
+        if max_loan % 50000 != 0:
+            print("Additional Charge added")
+            base_fee += 250
+            print("Updated base fee is", base_fee)
     elif credit_score >= 620 and credit_score < 720: #tier2
         print("Credit Score within range of 620 to 720")
         max_loan = monthly_revenue * 1.5
