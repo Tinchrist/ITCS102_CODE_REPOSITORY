@@ -1,5 +1,5 @@
 #inputs
-age = int(input("AGE"))
+age = int(input("AGE ---> "))
 monthly_revenue = float(input("REVENUE ---> "))
 credit_score = int(input("CREDIT SCORE --> "))
 years_in_business = float(input("years IN BUSINESS ---> "))
