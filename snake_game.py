@@ -27,6 +27,10 @@ HEAD_COLOR = (219, 60, 140)
 FOOD_COLOR = (255, 80, 80)
 TEXT_COLOR = (100, 40, 70)
 
+# ROCK SETTINGS
+ROCK_COLOR = (110, 130, 140)
+ROCKS = [(6, 6), (7, 5), (8, 5), (15, 12), (16, 12), (17, 12)]
+
 # ============================================================
 #  PART 2: SETUP
 # ============================================================
@@ -58,6 +62,9 @@ def place_food(snake):
     """Pick a random empty square for the food."""
     while True:
         spot = (random.randint(0, GRID_WIDTH - 1), random.randint(0, GRID_HEIGHT - 1))
+
+# Food cannot appear on the snake or rocks
+        if spot not in snake and spot not in ROCKS
         if spot not in snake:
             return spot
 
