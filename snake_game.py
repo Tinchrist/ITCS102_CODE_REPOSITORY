@@ -108,14 +108,14 @@ while running:
                     game_over = False
                 elif event.key == pygame.K_q:                # Q = quit
                     running = False
-            # The "!=" checks stop the snake from turning back into itself
-            elif event.key == pygame.K_UP and direction != (0, 1):
+            # WASD Controls 
+            elif event.key == pygame.K_w and direction != (0, 1):
                 direction = (0, -1)
-            elif event.key == pygame.K_DOWN and direction != (0, -1):
+            elif event.key == pygame.K_s and direction != (0, -1):
                 direction = (0, 1)
-            elif event.key == pygame.K_LEFT and direction != (1, 0):
+            elif event.key == pygame.K_a and direction != (1, 0):
                 direction = (-1, 0)
-            elif event.key == pygame.K_RIGHT and direction != (-1, 0):
+            elif event.key == pygame.K_d and direction != (-1, 0):
                 direction = (1, 0)
 
     # ---- 2. UPDATE: move the snake and check what happened ----
